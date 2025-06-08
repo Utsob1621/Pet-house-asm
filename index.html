@@ -22,6 +22,10 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-text': '',
+                'secondary-text': '#da373d',
+                'primary-bg': '#FFDC26',
+                'secondary-bg': '#da373d',
               }
             }
           }
@@ -34,7 +38,7 @@
       }
       .font-adlam-display{
       font-family: "ADLaM Display", system-ui;
-    }
+      }
     </style>
 </head>
 <body class="font-sono">
@@ -42,18 +46,20 @@
     <nav class="bg-orange-50">
       <div class="navbar md:container md:mx-auto">
       <div class="navbar-start">
-        
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <img src="./c1-assets/logo-header.png" alt="" class="animate-pulse">
+        <a class="text-xl ml-3 invisible sm:visible animate-pulse	">Browse<span class="text-primary-bg">4</span>Pets</a>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
+      <div class="navbar-center hidden md:invisible lg:visible lg:flex">
+        <ul class="menu menu-horizontal px-1 text-xl">
           <li><a>Breeds</a></li>
           <li><a>Contact us</a></li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn">Button</a>
-      </div>
+          <i class="invisible lg:visible fa-solid fa-magnifying-glass"></i>
+          <i class="invisible lg:visible ml-4 fa-regular fa-bell"></i>
+          <button class="invisible lg:visible mx-3 border border-primary-bg py-2 px-7 rounded-lg text-xl font-medium font-adlam-display">Login</button>
+          <a class="btn bg-primary-bg invisible md:visible lg:visible text-xl font-adlam-display">Register</a>
       <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
@@ -71,7 +77,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 p-2 shadow right-1">
             <li><a>Breeds</a></li>
             <li><a>Contact us</a></li>
           </ul>
