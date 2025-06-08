@@ -7,7 +7,11 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- font-2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/0cddb4af5b.js" crossorigin="anonymous"></script>
     <!-- daisyUI CDN -->
@@ -25,7 +29,7 @@
                 'primary-text': '',
                 'secondary-text': '#da373d',
                 'primary-bg': '#FFDC26',
-                'secondary-bg': '#da373d',
+                'secondary-bg': '#F9DF8A',
               }
             }
           }
@@ -33,24 +37,26 @@
     </script>
     <!--  -->
     <style>
-      .font-sono{
-        font-family: "Sono", monospace;
+      
+      .sora-font{
+        font-family: "Sora", sans-serif;
       }
-      .font-adlam-display{
-      font-family: "ADLaM Display", system-ui;
+      .aclonica-regular-font{
+        font-family: "Aclonica", sans-serif;
       }
     </style>
 </head>
-<body class="font-sono">
+<body class="sora-font text-black">
   <header>
     <nav class="bg-orange-50">
       <div class="navbar md:container md:mx-auto">
       <div class="navbar-start">
         <img src="./c1-assets/logo-header.png" alt="" class="animate-pulse">
-        <a class="text-xl ml-3 invisible sm:visible animate-pulse	">Browse<span class="text-primary-bg">4</span>Pets</a>
+        <a class="text-xl ml-3 invisible sm:visible animate-pulse">Browse<span class="text-primary-bg">4</span>Pets</a>
       </div>
       <div class="navbar-center hidden md:invisible lg:visible lg:flex">
         <ul class="menu menu-horizontal px-1 text-xl">
+          <li><a>Find a pet </a></li>
           <li><a>Breeds</a></li>
           <li><a>Contact us</a></li>
         </ul>
@@ -58,8 +64,8 @@
       <div class="navbar-end">
           <i class="invisible lg:visible fa-solid fa-magnifying-glass"></i>
           <i class="invisible lg:visible ml-4 fa-regular fa-bell"></i>
-          <button class="invisible lg:visible mx-3 border border-primary-bg py-2 px-7 rounded-lg text-xl font-medium font-adlam-display">Login</button>
-          <a class="btn bg-primary-bg invisible md:visible lg:visible text-xl font-adlam-display">Register</a>
+          <a class="invisible lg:visible mx-3 btn btn-outline btn-warning py-2 px-5 rounded-lg text-lg text-primary-bg">Login</a>
+          <a class="btn btn-warning bg-primary-bg invisible md:visible lg:visible text-lg">Register</a>
       <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
@@ -78,15 +84,75 @@
           <ul
             tabindex="0"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 p-2 shadow right-1">
+            <li><a>Find a pet </a></li>
             <li><a>Breeds</a></li>
             <li><a>Contact us</a></li>
           </ul>
         </div>
     </div>
     </nav>
+    <!-- banner section -->
+    <div class="bg-[url('./c1-assets/cat-big.png')] bg-contain lg:bg-cover bg-no-repeat bg-bottom min-h-[65vh] lg:min-h-[85vh] md:container md:mx-auto lg:pt-[90px] mt-10">
+      <div class="lg:w-[680px] space-y-5 lg:space-y-8 px-4 lg:px-0">
+          <h1 class="text-3xl lg:text-5xl  aclonica-regular-font">Pamper Your Pet,<br> Because They Deserve the Bes</h1>
+          <p class="">Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="btn btn-warning">Find a pet</button>
+      </div>
   </header>
   <main>
-
+    <!-- cetagory section -->
+     <section class="md:container md:mx-auto my-20 p-3 lg:p-0">
+      <h3 class="text-4xl aclonica-regular-font mb-20">Browse By Categories</h3>
+      <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 lg:gap-5">
+        <div class="bg-secondary-bg py-8 px-10 rounded-xl space-y-6 text-center">
+          <img class="border-2 p-5 rounded-full bg-white mx-auto" src="./c1-assets/bird-cartoon.png" alt="">
+          <div>
+            <h5 class="mb-3 aclonica-regular-font text-xl">Bird</h5>
+            <p>3 items</p>
+          </div>
+        </div>
+        <!-- 2 -->
+         <div class="bg-secondary-bg py-8 px-10 rounded-xl space-y-6 text-center">
+          <img class="border-2 p-5 rounded-full bg-white mx-auto" src="./c1-assets/fish-cartoon.png" alt="">
+          <div>
+            <h5 class="mb-3 aclonica-regular-font text-xl">Fish</h5>
+            <p>3 items</p>
+          </div>
+        </div>
+        <!-- 3 -->
+         <div class="bg-secondary-bg py-8 px-10 rounded-xl space-y-6 text-center">
+          <img class="border-2 p-5 rounded-full bg-white mx-auto" src="./c1-assets/dog-cartoon.png" alt="">
+          <div>
+            <h5 class="mb-3 aclonica-regular-font text-xl">Dog</h5>
+            <p>3 items</p>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="bg-secondary-bg py-8 px-10 rounded-xl space-y-6 text-center">
+          <img class="border-2 p-5 rounded-full bg-white mx-auto" src="./c1-assets/cat-cartoon.png" alt="">
+          <div>
+            <h5 class="mb-3 aclonica-regular-font text-xl">Cat</h5>
+            <p>3 items</p>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="bg-secondary-bg py-8 px-10 rounded-xl space-y-6 text-center">
+          <img class="border-2 p-5 rounded-full bg-white mx-auto" src="./c1-assets/rabbit-cartoon.png" alt="">
+          <div>
+            <h5 class="mb-3 aclonica-regular-font text-xl">Rabbit</h5>
+            <p>3 items</p>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="bg-secondary-bg py-8 px-10 rounded-xl space-y-6 text-center">
+          <img class="border-2 p-5 rounded-full bg-white mx-auto" src="./c1-assets/mouse-cartoon.png" alt="">
+          <div>
+            <h5 class="mb-3 aclonica-regular-font text-xl">Mouse</h5>
+            <p>3 items</p>
+          </div>
+        </div>
+      </div>
+     </section>
   </main>
   <footer>
 
